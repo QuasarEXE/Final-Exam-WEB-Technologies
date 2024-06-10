@@ -1,0 +1,310 @@
+/*основное*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+} 
+
+a {
+    text-decoration: none; 
+}
+/* шапка */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#picture1 {
+    float: left;
+}
+
+.idhead{
+    display: flex;
+    width: 20%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    list-style: none; 
+    padding-left: 0; 
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+  }
+
+.navA{
+    margin-right: 50px;
+}
+
+.shapka {
+    padding: 20px 0 20px 20px; 
+}
+
+input{
+    border-radius: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    font-weight: 800;
+    background: none;
+    cursor: pointer;
+}
+
+/* меин */
+main {
+    margin: 0;
+}
+
+/*фото*/
+.banner{
+    background-image: url(../images/as.jpg);
+    background-size: cover;
+    padding-top: 47vh;
+    padding-bottom: 5vh;
+    padding-left: 70px;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.news, .stories, .opinion, .interview{
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+/*card*/
+
+.strodin, .strdva, .strtri{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 15%;
+    margin-bottom: 20px;
+    transition: transform .3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.text{
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.1;
+}
+
+.text::first-letter{
+    font-size: 24px;
+}
+
+.imgone{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+}
+
+.novosti{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#zagl{
+    padding: 50px;
+    margin: 0;
+}
+
+/*footer*/
+
+footer{
+    padding-top: 40px;
+    padding-bottom: 1px;
+}
+
+.group{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.grupa{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerA1{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footerA{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footerP{
+    margin-left: 30px;
+}
+
+.line{
+    width: 55%;
+    height: 2px;
+    margin: 0 auto;
+}
+
+
+/*Светлая тема*/
+
+body.lightTheme{
+    background-color: white;
+}
+
+.lightTheme a{
+    color: white;
+}
+
+.lightTheme header {
+    background-color: #34BAD4;
+    color: white;
+}
+
+.lightTheme .news, .lightTheme .stories,.lightTheme .opinion,.lightTheme .interview{
+    color: black;
+    border: 2px solid #34BAD4;
+    background-color: #34BAD4;
+}
+
+.lightTheme input{
+    background-color: #34BAD4;
+    color: white;
+}
+
+.lightTheme .themeButton:hover{
+    color: black;
+}
+
+.lightTheme .text{
+    color: black;
+}
+
+.lightTheme .text::first-letter{
+    color: #34BAD4;
+}
+
+.lightTheme footer{
+    background-color: rgb(233, 233, 233);
+    color:#777777;
+}
+
+.lightTheme .footerA1{
+    color: #ff5311;
+}
+
+.lightTheme .footerA{
+    color:#00acee ;
+}
+
+.lightTheme .footerA1:link{
+    color: #ff5311;
+}
+
+.lightTheme .footerA1:visited{
+    color: #00acee;
+}
+
+.lightTheme .line{
+    background-color: #00acee;
+}
+
+/*Темная тема*/
+
+body.darkTheme{
+    background-color:#232E3C;
+}
+
+.darkTheme h1, .darkTheme h2, .darkTheme h3{
+    color:#E1EBF5;
+}
+
+.darkTheme input{
+    color: #E1EBF5;
+}
+
+.darkTheme .themeButton:hover{
+    color: #FFDF99;
+}
+
+.darkTheme a{
+    color:#E1EBF5;
+}
+
+.darkTheme header {
+    background-color:#374659;
+    color:#E1EBF5;
+}
+
+.darkTheme .news, .stories, .opinion, .interview{
+    color:#E1EBF5;
+    border: 2px solid #6091C2;
+    background-color: #6091C2;
+}
+.darkTheme .text{
+    color:#E1EBF5;
+}
+.darkTheme .text::first-letter{
+    color: #ACCDF0;
+}
+
+.darkTheme footer{
+    background-color:#374659;
+    color:#E1EBF5;
+}
+
+.darkTheme .footerA1{
+    color: #FFDF99;
+}
+
+.darkTheme .footerA{
+    color:#ACCDF0 ;
+}
+
+.darkTheme .footerA1:link{
+    color: #FFDF99;
+}
+
+.darkTheme .footerA1:visited{
+    color: #ACCDF0;
+}
+
+.darkTheme .line{
+    background-color: #ACCDF0;
+}
